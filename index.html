@@ -6,26 +6,62 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
       #welcome-section {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         height: 100vh;
-        margin-top: 5em;
         background-color: whitesmoke;
       }
       #navbar {
         position: fixed;
         background-color: blanchedalmond;
         width: 100%;
-        margin: 3px;
-        padding: 5px;
         display: flex;
-        text-align: right;
         top: 0;
+        height: 3rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-family: cursive;
+      }
+
+      #navbar a {
+        color: brown;
+      }
+
+      #projects {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        height: 50vh;
+        width: 100%;
+      }
+
+      .project-tile {
+        height: 12rem;
+        background-color: burlywood;
+        width: 25%;
+        text-align: center;
+        font-family: cursive;
+      }
+
+      .project-tile a {
+        margin-top: 2rem;
       }
 
       @media only screen and (max-width: 720px) {
         * {
-          margin: 0;
-          padding: 0;
+          font-size: 20px;
         }
       }
     </style>
@@ -56,10 +92,10 @@
       <div class="project-tile">
         <a href="#"> Checkout my Angular project.</a>
       </div>
-      <div class="project-title">
+      <div class="project-tile">
         <a href="#"> Click to view my Javascript project.</a>
       </div>
-      <div class="project-title">
+      <div class="project-tile">
         <a href="#">Here is my ruby-on-rails project.</a>
       </div>
     </section>
